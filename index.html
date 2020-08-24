@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golf Scorecard App - Lacey Crenshaw</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <label class="label-style" for="course-select">Current Course</label>
+  <select id="course-select" class="select-css" onchange="getCourse(this.value)"></select>
+  <label class="label-style" for="course-select">Tee Pad</label>
+  <select id="tee-select" class="select-css">
+    <option value="1">Pro 🥇</option>
+    <option value="2">Amateur 🥈</option>
+    <option value="3">Men 🏌🏻‍♂</option>
+    <option value="4">Women 🏌🏻‍♀️</option>
+  </select>
+  <label class="label-style" for="course-select">Players</label>
+  <select id="player-select" class="select-css">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>
+
+
+  <div class="scorecard" id="scorecard">
+    <div class="col" id="course-info"></div>
+  <div class="row">
+    <div class="playerlist">
+      <div class="table" style="width: 100px; background-color: #F7E3D9; font-weight: bold;">Holes</div>
+      <div class="table" style="width: 100px; background-color: #F7E3D9; font-weight: bold;">Yards</div>
+      <div class="table" style="width: 100px; background-color: #F7E3D9; font-weight: bold;">Par</div>
+      <div class="table" style="width: 100px; background-color: #F7E3D9; font-weight: bold;">Handicap</div>
+    </div>
+    <div class="row" id="holes">
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
