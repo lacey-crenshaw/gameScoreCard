@@ -38,7 +38,7 @@ async function getCourse(id) {
                     holes.forEach(hole => {
                         holesHtml +=
                             `<div id="${num}">
-        <p class="table" style="background-color: #FFFC4B; font-weight: bold;">${increment()}</p>
+        <p class="table">${increment()}</p>
         <p id="yards" class="table">${hole.teeBoxes[teeBox].yards}</p>
         <p id="par" class="table">${hole.teeBoxes[teeBox].par}</p>
         <p id="hcp" class="table">${hole.teeBoxes[teeBox].hcp}</p>
@@ -67,7 +67,7 @@ function players() {
         var numplayers = this.options[this.selectedIndex].value;
 
         for (var pl = 1; pl <= numplayers; pl++) {
-            $(".playerlist").append(`<input id='player${pl}' class='table' style='width: 100px;' type="text">`);
+            $(".playerlist").append(`<input id='player${pl}' class='table'>`);
             $("#out").append(`<input placeholder="0" id='outScore' class='table'>`)
             $("#total").append(`<input placeholder="0" id='totalScore' class='table'>`)
             $("#in").append(`<input placeholder="0" id='inScore' class='table'>`)

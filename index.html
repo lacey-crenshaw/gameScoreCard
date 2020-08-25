@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en"></html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Golf Scorecard App - Lacey Crenshaw</title>
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/minty/bootstrap.min.css" integrity="sha384-H4X+4tKc7b8s4GoMrylmy2ssQYpDHoqzPa9aKXbDwPoPUA3Ra8PA5dGzijN+ePnH" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="./css/styles.css"> -->
 </head>
 
 <body>
   <label class="label-style" for="course-select">Current Course</label>
   <select id="course-select" class="select-css" onchange="getCourse(this.value)"></select>
+  <div class="form-group">
   <label class="label-style" for="course-select">Tee Pad</label>
   <select id="tee-select" class="select-css">
     <option value="1">Select</option>
@@ -27,7 +28,7 @@
     <option value="3">3</option>
     <option value="4">4</option>
   </select>
-
+</div>
 
   <div class="scorecard" id="scorecard">
     <div class="col" id="course-info"></div>
